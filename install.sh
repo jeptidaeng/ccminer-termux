@@ -11,8 +11,6 @@ if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config
     echo "wget configuration"
     
 if !  wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..; then
-
-fi
 # compile
 echo "Compiling now"
 if ! chmod +x config.json start.sh ..  ; then
