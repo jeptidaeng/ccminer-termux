@@ -26,5 +26,4 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-   echo "Done... you can use run script now \"cd ~/ccminer; ./start.sh\".""
-fi
+   echo "Done... you can use run script now cd ~/ccminer; ./start.sh"
