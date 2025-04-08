@@ -8,8 +8,7 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 echo "Cloning and starting compiling"
  wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 # Basic *nix build instructions:
-echo "./install.sh"
-if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh  ..; then
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh -p chmod 777 config.json
     
 fi
 # compile
