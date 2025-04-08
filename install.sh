@@ -1,8 +1,5 @@
 #!/bin/bash
-# Linux build, optimised for ARM devices
-
-if [ ! -e configure ]; then
-	echo "Creating configure..."
+echo "Updating and installing required things"
 yes | pkg update && pkg upgrade -y
 yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
@@ -24,7 +21,7 @@ ls -l ccminer
 
 echo "Stripping..."
 
-strip -s ccminer
+strip -s cpuminer
 
 [ $? = 0 ] || exit $?
 echo "  => done."
