@@ -15,8 +15,7 @@ echo "  => done."
 	else
 		exit 1
 	fi
-fi
-
+if [ $? = 0  ]; then
 echo '$ ls -l ccminer'
 ls -l ccminer
 
@@ -26,4 +25,6 @@ strip -s cpuminer
 
 [ $? = 0 ] || exit $?
 echo "  => done."
+else
+   echo "Done... you can use run script now"
 fi
