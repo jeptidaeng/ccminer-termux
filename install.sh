@@ -10,10 +10,10 @@ echo "Cloning and starting compiling"
 # Basic *nix build instructions:
 echo "./install.sh"
 if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..; then
-    echo " chmod 777 configuration"
+    echo " chmod 777 ccminer start.sh"
     exit 1
 else
-     chmod 77 ccminer config.json start.sh ..
+      ..
 fi
 # compile
 echo "Compiling now"
@@ -21,8 +21,7 @@ echo "now Error: Compiling"
 exit 1
 else
    
-    echo "Done... you can use run script now"
-
+   echo "Done... you can use run script now"
    echo "setup nearly complete."
    echo "Edit the config with \"nano ~/ccminer/config.json\"" 
 
