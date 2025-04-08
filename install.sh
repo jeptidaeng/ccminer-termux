@@ -15,4 +15,3 @@ echo "now Error: Compiling"
 exit 1
 else
    echo "Done... nano ~/ccminer/config.json"
-fi
