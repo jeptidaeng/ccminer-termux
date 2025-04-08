@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Linux build, optimised for ARM devices
 
@@ -16,9 +15,7 @@ echo "  => done."
 	else
 		exit 1
 	fi
-echo "  => done."
 if [ $? != 0 ]; then
-exit 1
 echo '$ ls -l ccminer'
 ls -l ccuminer
 
@@ -28,4 +25,7 @@ strip -s ccminer
 
 [ $? = 0 ] || exit $?
 echo "  => done."
+else
+   echo "Done... you can use run script now"
+fi
 
