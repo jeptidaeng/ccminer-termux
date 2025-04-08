@@ -1,14 +1,14 @@
 #!/bin/bash
 echo "Updating and installing required things"
-yes | pkg update && pkg upgrade
-yes | pkg install libjansson wget nano
-echo "Cloning and starting compiling"
+yes | pkg update && pkg upgrade -y
+yes | pkg install libjansson wget nano -y
+echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
-# Basic *nix build instructions:
+# Basic *wget instructions:
 echo "./install.sh"
 if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json ..; then
-    echo "Error: build-linux-arm.sh configuration failed"
+    echo "Error: wget configuration failed"
     exit 1
 else
      wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..
