@@ -5,16 +5,16 @@ yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
-# Basic *wget instructions:
+echo "Cloning and starting compiling"
+ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
+# Basic *nix build instructions:
 echo "./install.sh"
-if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json ..; then
-    echo "wget web configuration"
-    exit 2
+if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..; then
+    echo " chmod 777 configuration"
+    exit 1
 else
- if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh .. ; then
-
+     chmod 77 ccminer config.json start.sh ..
 fi
-    chmod +x config.json start.sh
 # compile
 echo "Compiling now"
 echo "now Error: Compiling"
