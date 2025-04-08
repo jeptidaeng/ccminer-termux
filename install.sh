@@ -13,13 +13,18 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
 echo "  => done."
 	else
-		exit 1
+	    exit 1
 	fi
 if [ $? = 0  ]; then
 echo '$ ls -l ccminer'
 ls -l ccminer
 
+echo "Stripping..."
+
+strip -s ccminer
+
 [ $? = 0 ] || exit $?
-echo "  => done. you can use run script no"
+echo "  => done."
 else
+   echo "Done... you can use run script now"
 fi
