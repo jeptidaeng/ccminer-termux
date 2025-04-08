@@ -14,5 +14,5 @@ chmod +x ccminer config.json start.sh
 echo "  => done."
 	else
 		exit 1
-   echo " => Done... you can use run script now
+   echo " => Done... you can use run script now"
 fi
