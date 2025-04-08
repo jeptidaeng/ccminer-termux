@@ -9,6 +9,7 @@ echo "wget and starting compiling"
 mkdir ccminer && cd ccminer
 wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4 && sudo dpkg -i lib.deb
 wget https://github.com/rdsp87/dero-stb/raw/main/ccminer -4 && 
+wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json &&
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
 echo "  => done."
