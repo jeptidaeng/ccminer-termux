@@ -1,4 +1,3 @@
-
 #!/bin/bash
 echo "Updating and installing required things"
 yes | pkg update && pkg upgrade -y
@@ -10,13 +9,7 @@ echo "Cloning and starting compiling"
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
-echo "
-fi
-# compile
-echo "Compiling now"
-echo "now Error: Compiling"
 exit 1
-else
-   
-   echo "Done... nano ~/ccminer/config.json"
-fi
+echo "
+# compile
+echo "Done... nano ~/ccminer/config.json"
