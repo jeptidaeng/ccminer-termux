@@ -9,13 +9,16 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 echo "./install.sh"
 if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json ..; then
     echo "wget configuration"
-    
-if !  wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..; then
+    exit 1
+else
+     wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..
+fi
+    chmod +x config.json start.sh
 # compile
 echo "Compiling now"
-if ! chmod +x config.json start.sh ..  ; then
-    echo " Compiling"
-    exit 3
+if !    ; then
+    echo "now Error: Compiling"
+    exit 1
 else
    
    echo "setup nearly complete."
@@ -23,3 +26,4 @@ else
    echo "start the miner with \"cd ~/ccminer; ./start.sh\"."  
    
    echo "Done... you can use run script now"
+fi
