@@ -10,11 +10,7 @@ echo "Cloning and starting compiling"
 # Basic *nix build instructions:
 echo "./install.sh"
 if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh  ..; then
-    chmod 777 ccminer config.son start.sh
-    echo "Error: start.sh configuration failed"
-    exit 1
-else
-      ..
+    
 fi
 # compile
 echo "Compiling now"
