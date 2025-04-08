@@ -11,5 +11,7 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
 exit 1
 echo "
+if
 # compile
 echo "Done... nano ~/ccminer/config.json"
+if
