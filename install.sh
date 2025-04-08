@@ -1,6 +1,5 @@
 #!/bin/bash
 # Linux build, optimised for ARM devices
-
 if [ ! -e configure ]; then
 	echo "Creating configure..."
 yes | pkg update && pkg upgrade -y
@@ -15,10 +14,7 @@ chmod +x ccminer config.json start.sh
 # Basic *nix build instructions:
 echo "  => done."
 	else
-		exit 1
-	fi
-fi
-
+	exit 1
 echo '$ ls -l ccminer'
 ls -l ccminer
 
