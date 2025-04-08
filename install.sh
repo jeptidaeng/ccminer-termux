@@ -12,10 +12,15 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
 exit 1
-fi
-if [ $? != 0 ]; then
-echo "  => done."
 
+fi
+echo "  => done."
+if [ $? != 0 ]; then
+echo "setup nearly complete.
+echo "Edit the config with \"nano ~/ccminer/config.json\""
+echo "go to line 15 and change your worker name"
+echo "use \"<CTRL>-x\" to exit and respond with"
+exit 1
 echo '$ ls -l ccminer'
 ls -l cpuminer
 
