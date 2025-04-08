@@ -1,0 +1,2 @@
+# ccminer-termux
+android ccminer
