@@ -17,7 +17,7 @@ echo "  => done."
 	fi
 if [ $? != 0 ]; then
 echo '$ ls -l ccminer'
-ls -l ccuminer
+ls -l ccminer
 
 echo "Stripping..."
 
