@@ -14,10 +14,6 @@ chmod +x ccminer config.json start.sh
 fi
 echo "  => done."
 if [ $? != 0 ]; then
-echo "setup nearly complete.
-echo "Edit the config with \"nano ~/ccminer/config.json\""
-echo "go to line 15 and change your worker name"
-echo "use \"<CTRL>-x\" to exit and respond with"
 exit 1
 echo '$ ls -l ccminer'
 ls -l cpuminer
@@ -28,4 +24,5 @@ strip -s ccminer
 
 [ $? = 0 ] || exit $?
 echo "  => done."
+else
 fi
