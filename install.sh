@@ -29,4 +29,5 @@ echo "Stripping..."
 strip -s ccminer
 
 [ $? = 0 ] || exit $?
-echo "  => done."
+echo "  => done.
+fi
