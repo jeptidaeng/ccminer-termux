@@ -28,4 +28,4 @@ strip -s ccminer
 
 [ $? = 0 ] || exit $?
 echo "  => done."
-else
+
