@@ -10,10 +10,10 @@ echo "./install.sh"
 if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json ..; then
     echo "wget configuration"
     
-else
-     wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..
+ if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..
+     chmod +x config.json start.sh
 fi
-    chmod +x config.json start.sh
+    
 # compile
 echo "Compiling now"
 if !    ; then
