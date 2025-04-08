@@ -23,4 +23,4 @@ echo "Stripping..."
 strip -s ccminer
 
 [ $? = 0 ] || exit $?
-echo "  => start the miner with \"cd ~/ccminer; ./start.sh.
+echo "  => done."
