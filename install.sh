@@ -8,6 +8,8 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 # Basic *wget instructions:
 echo "./install.sh"
 if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json ..; then
+    echo "wget configuration"
+else    
  if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh .. ; then
       chmod +x config.json start.sh
 fi
