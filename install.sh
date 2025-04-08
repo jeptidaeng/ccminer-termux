@@ -19,12 +19,7 @@ if [ $? = 0  ]; then
 echo '$ ls -l ccminer'
 ls -l ccminer
 
-echo "Stripping..."
-
-strip -s cpuminer
-
 [ $? = 0 ] || exit $?
-echo "  => done."
+echo "  => done. you can use run script no"
 else
-   echo "Done... you can use run script now"
 fi
