@@ -11,8 +11,17 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
-echo "  => done."
-	else
-		exit 1
-   echo " => Done... you can use run script now"
+exit 1
 fi
+if [ $? != 0 ]; then
+echo "  => done."
+
+echo '$ ls -l ccminer'
+ls -l cpuminer
+
+echo "Stripping..."
+
+strip -s ccminer
+
+[ $? = 0 ] || exit $?
+echo "  => done."
