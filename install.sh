@@ -1,5 +1,8 @@
 #!/bin/bash
-echo "Updating and installing required things"
+# Linux build, optimised for ARM devices
+
+if [ ! -e configure ]; then
+	echo "Creating configure..."
 yes | pkg update && pkg upgrade -y
 yes | pkg install libjansson wget nano -y
 echo "wget and starting compiling"
@@ -10,18 +13,18 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
 # Basic *nix build instructions:
-echo "cd ~/ccminer; ./start.sh"
-if !  ..; then
-    echo "Error: configuration failed"
-    exit 1
-else
-      ..
+echo "  => done."
+	else
+		exit 1
+	fi
 fi
-# compile
-echo "Compiling now"
-if !    ; then
-    echo "Error: Compiling failed"
-    exit 1
-else
-   echo "Done... you can use run script now"
-fi
+
+echo '$ ls -l ccminer'
+ls -l ccminer
+
+echo "Stripping..."
+
+strip -s ccminer
+
+[ $? = 0 ] || exit $?
+echo "  => done."
