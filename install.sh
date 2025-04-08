@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Linux build, optimised for ARM devices
 
@@ -11,12 +12,15 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
-fi
+echo "  => done."
+	else
+		exit 1
+	fi
 echo "  => done."
 if [ $? != 0 ]; then
 exit 1
 echo '$ ls -l ccminer'
-ls -l cpuminer
+ls -l ccuminer
 
 echo "Stripping..."
 
@@ -25,4 +29,3 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-fi
