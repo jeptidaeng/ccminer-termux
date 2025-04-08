@@ -9,7 +9,7 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 echo "./install.sh"
 if ! wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json ..; then
     echo "wget configuration"
-    exit 1
+    
 else
      wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh ..
 fi
@@ -21,9 +21,10 @@ if !    ; then
     exit 1
 else
    
-   echo "setup nearly complete."
+    echo "Done... you can use run script now"
+
+    echo "setup nearly complete."
    echo "Edit the config with \"nano ~/ccminer/config.json\""
-   echo "start the miner with \"cd ~/ccminer; ./start.sh\"."  
-   
-   echo "Done... you can use run script now"
+   echo "start the miner with \"cd ~/ccminer; ./start.sh\"." 
+
 fi
