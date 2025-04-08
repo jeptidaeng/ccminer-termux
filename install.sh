@@ -13,14 +13,3 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
 # Basic *nix build instructions:
 echo "  => done."
-	else
-	exit 1
-echo '$ ls -l ccminer'
-ls -l ccminer
-
-echo "Stripping..."
-
-strip -s ccminer
-
-[ $? = 0 ] || exit $?
-echo "  => done."
