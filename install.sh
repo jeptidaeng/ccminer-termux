@@ -9,6 +9,7 @@ echo "Cloning and starting compiling"
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
+echo "Error: configuration failed"
 exit 1
 else
 fi
