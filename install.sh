@@ -11,8 +11,6 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
-exit 1
-
 fi
 echo "  => done."
 if [ $? != 0 ]; then
@@ -29,5 +27,5 @@ echo "Stripping..."
 strip -s ccminer
 
 [ $? = 0 ] || exit $?
-echo "  => done.
+echo "  => done."
 fi
