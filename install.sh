@@ -8,14 +8,11 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/ccminer
 echo "Cloning and starting compiling"
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
-chmod +x ccminer config.json start.sh   
-fi
+chmod +x ccminer config.json start.sh
 # compile
 echo "Compiling now"
 echo "now Error: Compiling"
 exit 1
 else
-   
-    echo "Done... nano ~/ccminer/config.json"
-
+   echo "Done... nano ~/ccminer/config.json"
 fi
