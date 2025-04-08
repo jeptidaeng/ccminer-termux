@@ -10,8 +10,12 @@ wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/config.json
 wget https://raw.githubusercontent.com/Darktron/pre-compiled/generic/start.sh
 chmod +x ccminer config.json start.sh
 exit 1
-echo "
-if
+else
+fi
 # compile
-echo "Done... nano ~/ccminer/config.json"
-if
+echo "Compiling now"
+    echo "Error: Compiling failed"
+    exit 1
+else
+   echo "Done... you can use run script now"
+fi
