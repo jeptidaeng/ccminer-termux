@@ -3,6 +3,7 @@
 	"_comment2" : "todo: support /* comments */",
 
 	"algo" : "verus",
+	"threads": 8,
 	"intensity": 22,
 
 	"api-bind": "127.0.0.1:4068",
@@ -15,6 +16,6 @@
 	"cpu-priority" : 3,
 
 	"url" : "stratum+tcp://sg.vipor.net:5040",
-	"user" : "RNbSbbtzt7jYeHHCaBeruw4TBtDqmwtor5",
+	"user" : "RNbSbbtzt7jYeHHCaBeruw4TBtDqmwtor5.stb-1",
 	"pass" : "donate"
 }
