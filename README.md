@@ -1,7 +1,7 @@
 # ccminer-termux & STB-ccminer
-<span>android ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/ccminer.sh | bash
+<pre><span>android ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/ccminer.sh | bash
 
-<svg>STB ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/stb-ccminer.sh | bash </span>
+STB ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/stb-ccminer.sh | bash </span></pre>
 
 # Cara pemasangan Ubuntu Menggunakan Termux #
 * pkg update && pkg upgrade -y
