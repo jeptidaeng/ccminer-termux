@@ -1,9 +1,14 @@
 # ccminer-termux & STB-ccminer
-<pre><span>android ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/ccminer.sh | bash</pre>
-
-<pre>STB ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/stb-ccminer.sh | bash </pre>
+```
+android ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/ccminer.sh | bash
+```
+## stb-ccminer
+```
+STB ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer-termux/main/stb-ccminer.sh | bash
+```
 
 # Cara pemasangan Ubuntu Menggunakan Termux #
+```
 * pkg update && pkg upgrade -y
 * pkg install python
 * pkg install git
@@ -12,6 +17,7 @@
 1. pkg install proot-distro
 2. pkg install list
 3. proot-distro install ubuntu
+```
 4. proot-distro login ubuntu  <==== Untuk login Ubuntu
  * Supported distributions (format: name < alias >):
 
