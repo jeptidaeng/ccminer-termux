@@ -10,9 +10,9 @@ STB ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer
 # Cara pemasangan Ubuntu Menggunakan Termux #
 ```
 pkg update && pkg upgrade -y
-pkg install python
-pkg install git
-pkg install wget
+pkg install python -y
+pkg install git -y
+pkg install wget -y
 ```
 Penginsatallan Ubuntu
 ```
