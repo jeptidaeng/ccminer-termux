@@ -9,17 +9,19 @@ STB ccminer =>  curl -o- -k https://raw.githubusercontent.com/jeptidaeng/ccminer
 
 # Cara pemasangan Ubuntu Menggunakan Termux #
 ```
-* pkg update && pkg upgrade -y
-* pkg install python
-* pkg install git
-* pkg install wget
-* {Untuk install proot-disto Ubuntu}
-1. pkg install proot-distro
-2. pkg install list
-3. proot-distro install ubuntu
+pkg update && pkg upgrade -y
+pkg install python
+pkg install git
+pkg install wget
+```
+Penginsatallan Ubuntu
+```
+pkg install proot-distro
+pkg install list
+proot-distro install ubuntu
 ```
 4. proot-distro login ubuntu  <==== Untuk login Ubuntu
- * Supported distributions (format: name < alias >):
+* Supported distributions (format: name < alias >):
 
   * Adélie Linux < adelie >
   * Alpine Linux < alpine >
